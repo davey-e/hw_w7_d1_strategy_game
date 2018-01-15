@@ -9,12 +9,17 @@ public class TroopTest {
 
     @Before
     public void before(){
-        troop = new Troop("Bobby");
+        troop = new Troop("Bobby", 1000);
     }
 
     @Test
     public void hasName(){
         assertEquals("Bobby", troop.getName());
+    }
+
+    @Test
+    public void hasHealthValue(){
+        assertEquals(1000, troop.getHealthValue());
     }
 
 }
