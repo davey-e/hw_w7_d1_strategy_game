@@ -21,4 +21,8 @@ public class Defense {
     public int getAttackValue() {
         return this.attackValue;
     }
+
+    public void setHealthValue(int newHealthValue) {
+        this.healthValue = newHealthValue;
+    }
 }

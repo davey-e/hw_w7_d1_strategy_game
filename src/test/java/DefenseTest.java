@@ -27,5 +27,11 @@ public class DefenseTest {
         assertEquals(50, defense.getAttackValue());
     }
 
+    @Test
+    public void canSetHealthValue(){
+        defense.setHealthValue(2000);
+        assertEquals(2000, defense.getHealthValue());
+    }
+
 
 }
