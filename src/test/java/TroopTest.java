@@ -9,7 +9,7 @@ public class TroopTest {
 
     @Before
     public void before(){
-        troop = new Troop("Bobby", 1000);
+        troop = new Tank("Bobby", 1000, 50);
     }
 
     @Test
@@ -21,5 +21,11 @@ public class TroopTest {
     public void hasHealthValue(){
         assertEquals(1000, troop.getHealthValue());
     }
+
+    @Test
+    public void hasAttackValue(){
+        assertEquals(50, troop.getAttackValue());
+    }
+
 
 }
