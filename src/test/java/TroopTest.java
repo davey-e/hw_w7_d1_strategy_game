@@ -27,5 +27,4 @@ public class TroopTest {
         assertEquals(50, troop.getAttackValue());
     }
 
-
 }

@@ -11,14 +11,18 @@ public abstract class Troop {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public int getHealthValue() {
-        return healthValue;
+        return this.healthValue;
     }
 
     public int getAttackValue() {
-        return attackValue;
+        return this.attackValue;
+    }
+
+    public String shout(String battleCry){
+        return battleCry;
     }
 }

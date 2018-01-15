@@ -17,4 +17,9 @@ public class TankTest {
         assertEquals("Bobby", tank.getName());
     }
 
+    @Test
+    public void canShout(){
+        assertEquals("Come and get me!", tank.shout("Come and get me!"));
+    }
+
 }
