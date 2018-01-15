@@ -18,6 +18,10 @@ public abstract class Troop {
         return this.healthValue;
     }
 
+    public void setHealthValue(int newHealthValue) {
+        this.healthValue = newHealthValue;
+    }
+
     public int getAttackValue() {
         return this.attackValue;
     }
@@ -25,4 +29,5 @@ public abstract class Troop {
     public String shout(String battleCry){
         return battleCry;
     }
+
 }
