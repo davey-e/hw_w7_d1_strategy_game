@@ -1,4 +1,4 @@
-public class Defense {
+public abstract class Defense {
 
     private String type;
     private int healthValue;

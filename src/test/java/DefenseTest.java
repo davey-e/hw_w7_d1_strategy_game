@@ -9,7 +9,7 @@ public class DefenseTest {
 
     @Before
     public void before(){
-        defense = new Defense("Cannon", 1000, 50);
+        defense = new Cannon("Cannon", 1000, 50);
     }
 
     @Test
