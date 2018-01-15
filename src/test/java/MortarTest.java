@@ -11,7 +11,7 @@ public class MortarTest {
     @Before
     public void before(){
         mortar = new Mortar("Mortar", 500, 20);
-        rifleman = new Rifleman("Johnny", 500, 20);
+        rifleman = new Rifleman("Johnny", 500, 20, 4);
     }
 
     @Test

@@ -11,7 +11,7 @@ public class TroopTest {
 
     @Before
     public void before(){
-        troop = new Tank("Bobby", 1000, 50);
+        troop = new Tank("Bobby", 1000, 50, 2);
         cannon = new Cannon("Cannon", 2000, 50);
     }
 
@@ -28,6 +28,11 @@ public class TroopTest {
     @Test
     public void hasAttackValue(){
         assertEquals(50, troop.getAttackValue());
+    }
+
+    @Test
+    public void hasSpeed(){
+        assertEquals(2, troop.getSpeed());
     }
 
     @Test

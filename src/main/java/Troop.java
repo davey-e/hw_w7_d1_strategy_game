@@ -3,11 +3,13 @@ public abstract class Troop {
     private String name;
     private int healthValue;
     private int attackValue;
+    private int speed;
 
-    public Troop(String name, int healthValue, int attackValue){
+    public Troop(String name, int healthValue, int attackValue, int speed){
         this.name = name;
         this.healthValue = healthValue;
         this.attackValue = attackValue;
+        this.speed = speed;
     }
 
     public String getName() {
@@ -26,6 +28,10 @@ public abstract class Troop {
         return this.attackValue;
     }
 
+    public int getSpeed() {
+        return speed;
+    }
+
     public String shout(String battleCry){
         return battleCry;
     }
@@ -33,4 +39,5 @@ public abstract class Troop {
     public void attack(Defense defense){
         defense.setHealthValue(defense.getHealthValue() - this.attackValue);
     }
+
 }

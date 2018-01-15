@@ -11,7 +11,7 @@ public class DefenseTest {
     @Before
     public void before(){
         defense = new Cannon("Cannon", 1000, 50);
-        tank = new Tank("Bobby", 2000, 200);
+        tank = new Tank("Bobby", 2000, 200, 2);
     }
 
     @Test

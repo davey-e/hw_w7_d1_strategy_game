@@ -12,7 +12,7 @@ public class CannonTest {
     @Before
     public void before(){
         cannon = new Cannon("Cannon", 1000, 50);
-        tank = new Tank("Bobby", 2000, 50);
+        tank = new Tank("Bobby", 2000, 50, 2);
     }
 
     @Test

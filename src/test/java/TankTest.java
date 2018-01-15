@@ -10,7 +10,7 @@ public class TankTest {
 
     @Before
     public void before(){
-        tank = new Tank("Bobby", 2000, 200);
+        tank = new Tank("Bobby", 2000, 200, 2);
         cannon = new Cannon("Cannon", 2000, 50);
     }
 
@@ -28,6 +28,11 @@ public class TankTest {
     public void canAttack(){
         tank.attack(cannon);
         assertEquals(1800, cannon.getHealthValue());
+    }
+
+    @Test
+    public void canMove(){
+        assertEquals("I am moving at speed 2. A bit slow!", tank.move());
     }
 
 }

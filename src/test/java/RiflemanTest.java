@@ -10,7 +10,7 @@ public class RiflemanTest {
 
     @Before
     public void before(){
-        rifleman = new Rifleman("Johnny", 500, 20);
+        rifleman = new Rifleman("Johnny", 500, 20, 4);
         mortar = new Mortar("Mortar", 500, 50);
     }
 
@@ -28,5 +28,10 @@ public class RiflemanTest {
     public void canAttack(){
         rifleman.attack(mortar);
         assertEquals(480, mortar.getHealthValue());
+    }
+
+    @Test
+    public void canMove(){
+        assertEquals("I am moving at speed 4. Not bad!", rifleman.move());
     }
 }
