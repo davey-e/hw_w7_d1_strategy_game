@@ -6,10 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class DefenseTest {
 
     Defense defense;
+    Tank tank;
 
     @Before
     public void before(){
         defense = new Cannon("Cannon", 1000, 50);
+        tank = new Tank("Bobby", 2000, 200);
     }
 
     @Test
@@ -33,5 +35,10 @@ public class DefenseTest {
         assertEquals(2000, defense.getHealthValue());
     }
 
+    @Test
+    public void canAttack(){
+        defense.attack(tank);
+        assertEquals(1950, tank.getHealthValue());
+    }
 
 }

@@ -25,4 +25,8 @@ public abstract class Defense {
     public void setHealthValue(int newHealthValue) {
         this.healthValue = newHealthValue;
     }
+
+    public void attack(Troop troop){
+        troop.setHealthValue(troop.getHealthValue() - this.attackValue);
+    }
 }
