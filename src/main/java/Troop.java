@@ -30,4 +30,7 @@ public abstract class Troop {
         return battleCry;
     }
 
+    public void attack(Defense defense){
+        defense.setHealthValue(defense.getHealthValue() - this.attackValue);
+    }
 }
