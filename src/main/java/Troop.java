@@ -29,7 +29,7 @@ public abstract class Troop {
     }
 
     public int getSpeed() {
-        return speed;
+        return this.speed;
     }
 
     public String shout(String battleCry){
